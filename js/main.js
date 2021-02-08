@@ -69,16 +69,26 @@ const singleMealCard = (meal) => {
     // Grid Column
     const col = document.createElement("div");
     col.className = "col-md-3";
+    // style
+    col.style.margin = "10px";
+    
+    col.style.padding = "10px";
 
     // Link
     const cardLink = document.createElement("a");
     cardLink.className = "single-meal";
     cardLink.href =
         "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + meal.idMeal;
+    // style
+    cardLink.style.textDecoration = "none";
+    cardLink.style.textAlign = "center";
+
 
     // Create Card Element
     const card = document.createElement("div");
     card.className = "card";
+    // style
+    card.style.maxHeight = "500px";
 
     // Create Img
     const cardImage = document.createElement("img");
