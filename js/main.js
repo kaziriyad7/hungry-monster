@@ -94,6 +94,7 @@ const singleMealCard = (meal) => {
     cardTitle.className = "card-title";
     const cardTitleText = document.createTextNode(meal.strMeal);
     cardTitle.appendChild(cardTitleText);
+    
 
     // Add cardTitle to CardBody
     cardBody.appendChild(cardTitle);
